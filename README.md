@@ -1,2 +1,2 @@
-# friend_finder
-An Express web application that takes users information and survey answers and matches them based on compatibility.
+# Friend Finder
+An Express web application that collects survey answers and uses them to compare and match users based on compatibility.
