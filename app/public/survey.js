@@ -25,17 +25,20 @@ $("#submit").on("click", (event) => {
         photo: $("#photo").val(),
         scores: [
             $("#q1").val(),
-            // $("#q2").val(),
-            // $("#q3").val(),
-            // $("#q4").val(),
-            // $("#q5").val(),
-            // $("#q6").val(),
-            // $("#q7").val(),
-            // $("#q8").val(),
-            // $("#q9").val(),
-            // $("#q10").val()
+            $("#q2").val(),
+            $("#q3").val(),
+            $("#q4").val(),
+            $("#q5").val(),
+            $("#q6").val(),
+            $("#q7").val(),
+            $("#q8").val(),
+            $("#q9").val(),
+            $("#q10").val()
         ]
     };
+
+
+    // return .map(math.abs(a[i] - b[i]))
 
     // AJAX post the data to the friends API.
     $.post("/api/friends", userData, (data) => {
