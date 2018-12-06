@@ -1,78 +1,83 @@
-// Chosen CSS
-var config = {
-    ".chosen-select": {},
-    ".chosen-select-deselect": {
-        allow_single_deselect: true
+const friends = [{
+        "name": "Mindy",
+        "photo": "https://vignette.wikia.nocookie.net/thegoodplace/images/9/9c/Mindy-St-Claire.jpg/revision/latest?cb=20180914205021",
+        "scores": [
+            5,
+            1,
+            4,
+            4,
+            5,
+            1,
+            2,
+            5,
+            4,
+            1
+        ]
     },
-    ".chosen-select-no-single": {
-        disable_search_threshold: 10
+    {
+        "name": "Janet",
+        "photo": "https://pbs.twimg.com/media/Dam9HREU8AAtz4e.png",
+        "scores": [
+            5,
+            1,
+            4,
+            4,
+            5,
+            1,
+            2,
+            5,
+            4,
+            1
+        ]
     },
-    ".chosen-select-no-results": {
-        no_results_text: "Oops, nothing found!"
+    {
+        "name": "Derek",
+        "photo": "https://vignette.wikia.nocookie.net/thegoodplace/images/7/75/Derek.jpg/revision/latest?cb=20171030124055",
+        "scores": [
+            5,
+            1,
+            4,
+            4,
+            5,
+            1,
+            2,
+            5,
+            4,
+            1
+        ]
     },
-    ".chosen-select-width": {
-        width: "95%"
+    {
+        "name": "Michael",
+        "photo": "https://cimg.tvgcdn.net/i/2017/09/20/6efc32c0-dfa3-41eb-8b8f-b58590f0a797/170920-thegoodplace-michael.jpg",
+        "scores": [
+            5,
+            1,
+            4,
+            4,
+            5,
+            1,
+            2,
+            5,
+            4,
+            1
+        ]
+    },
+    {
+        "name": "Chidi Adagonye",
+        "photo": "https://pixel.nymag.com/imgs/daily/vulture/2018/09/27/27-chidi-the-good-place-1.w330.h330.jpg",
+        "scores": [
+            5,
+            1,
+            4,
+            4,
+            5,
+            1,
+            2,
+            5,
+            4,
+            1
+        ]
     }
-};
+];
 
-for (var selector in config) {
-    $(selector).chosen(config[selector]);
-}
-
-// Capture the form inputs
-$("#submit").on("click", function (event) {
-    event.preventDefault();
-
-    // Form validation
-    function validateForm() {
-        var isValid = true;
-        $(".form-control").each(function () {
-            if ($(this).val() === "") {
-                isValid = false;
-            }
-        });
-
-        $(".chosen-select").each(function () {
-
-            if ($(this).val() === "") {
-                isValid = false;
-            }
-        });
-        return isValid;
-    }
-
-    // If all required fields are filled
-    if (validateForm()) {
-        // Create an object for the user"s data
-        var userData = {
-            name: $("#name").val(),
-            photo: $("#photo").val(),
-            scores: [
-                $("#q1").val(),
-                $("#q2").val(),
-                $("#q3").val(),
-                $("#q4").val(),
-                $("#q5").val(),
-                $("#q6").val(),
-                $("#q7").val(),
-                $("#q8").val(),
-                $("#q9").val(),
-                $("#q10").val()
-            ]
-        };
-
-        // AJAX post the data to the friends API.
-        $.post("/api/friends", userData, function (data) {
-
-            // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-            $("#match-name").text(data.name);
-            $("#match-img").attr("src", data.photo);
-
-            // Show the modal with the best match
-            $("#results-modal").modal("toggle");
-
-        });
-    } else {
-        alert("Please fill out all fields before submitting!");
-    }
-});
+module.exports = friends;
