@@ -14,7 +14,6 @@ module.exports = (app) => {
     app.post("/api/friends", (req, res) => {
         let userScore = req.body.scores;
         const scoresArr = [];
-        const friendCount = 0;
         let bestMatch = 0;
 
         for (var i = 0; i < friendData.length; i++) {

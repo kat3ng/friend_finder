@@ -80,7 +80,7 @@ const friends = [{
     },
     {
         "name": "Eleanor",
-        "photo": "https://pixel.nymag.com/imgs/daily/vulture/2018/09/27/27-chidi-the-good-place-1.w330.h330.jpg",
+        "photo": "http://digitalspyuk.cdnds.net/16/19/980x490/landscape-1463345474-screen-shot-2016-05-15-at-214845.png",
         "scores": [
             5,
             1,
@@ -96,7 +96,7 @@ const friends = [{
     },
     {
         "name": "Tahani",
-        "photo": "https://pixel.nymag.com/imgs/daily/vulture/2018/09/27/27-chidi-the-good-place-1.w330.h330.jpg",
+        "photo": "https://imgix.bustle.com/uploads/image/2017/10/13/b69105c2-dfb3-4a65-ad89-e1ac855c9d90-nup_178286_1455.JPG?w=970&h=582&fit=crop&crop=faces&auto=format&q=70",
         "scores": [
             5,
             3,
@@ -112,7 +112,7 @@ const friends = [{
     },
     {
         "name": "Jason",
-        "photo": "https://pixel.nymag.com/imgs/daily/vulture/2018/09/27/27-chidi-the-good-place-1.w330.h330.jpg",
+        "photo": "https://3.bp.blogspot.com/-iu39vOEVWmU/V_HbR4AU1iI/AAAAAAAAAhE/A8gQsExwADEC6TLfQ40wnFqHR2YOTQDzACLcB/s1600/jason-1x04.png",
         "scores": [
             3,
             1,
