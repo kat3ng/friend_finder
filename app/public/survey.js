@@ -37,9 +37,6 @@ $("#submit").on("click", (event) => {
         ]
     };
 
-
-    // return .map(math.abs(a[i] - b[i]))
-
     // AJAX post the data to the friends API.
     $.post("/api/friends", userData, (data) => {
 
@@ -53,6 +50,3 @@ $("#submit").on("click", (event) => {
     });
 
 });
-
-// finish your readme
-// don't forget to deploy to heroku
