@@ -48,7 +48,7 @@ const friends = [{
     },
     {
         "name": "Michael",
-        "photo": "https://cimg.tvgcdn.net/i/2017/09/20/6efc32c0-dfa3-41eb-8b8f-b58590f0a797/170920-thegoodplace-michael.jpg",
+        "photo": "https://res.cloudinary.com/jerrick/image/upload/f_auto,fl_progressive,q_auto,c_fit,w_620/qryzqb2ljmkmoxbhmvvu",
         "scores": [
             3,
             5,
