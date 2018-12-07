@@ -14,7 +14,9 @@ ___
 ---
 A "Good Place" themed Express web application that collects information from the user via survey, compares the users answers against a database of other users, and and uses the difference to compare and match them with their "Soul Mate".
 
-![image of friend finder](app/public/images/quiz-screen.png)
+![image of survey](app/public/images/quiz-screen.png)
+
+![image of - it's a match!](app/public/images/soul-mate.png)
 
 **Before you get started, make sure you have these node packages installed:**
 1. **Express:** A fast and minimalist web framework for node.
