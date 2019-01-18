@@ -3,7 +3,7 @@
 - **For:** Northwestern Coding Bootcamp
 - **Developer:** Kat Eng
 - **Deployment Date** 12/06/2018
-- **Built With** Node.js, Javascript, Express
+- **Built With** CSS, Node.js, Javascript, JQuery, Node.js, Express
 - **Demo** Watch a full demo [here!](https://youtu.be/QHPTjvWWI-k)
 
 
